@@ -1,0 +1,686 @@
+{
+    "name": "karate",
+    "group": "cl.villegas",
+    "version": "1.0-SNAPSHOT",
+    "java": {
+        "source": "1.8",
+        "target": "1.8"
+    },
+    "dependencies": [
+        {
+            "group": "org.junit.platform",
+            "version": "1.7.2",
+            "name": "junit-platform-engine",
+            "module": {
+                "group": "org.junit.platform",
+                "name": "junit-platform-engine"
+            }
+        },
+        {
+            "group": "org.junit.platform",
+            "version": "1.7.2",
+            "name": "junit-platform-commons",
+            "module": {
+                "group": "org.junit.platform",
+                "name": "junit-platform-commons"
+            }
+        },
+        {
+            "group": "org.junit.vintage",
+            "version": "5.7.2",
+            "name": "junit-vintage-engine",
+            "module": {
+                "group": "org.junit.vintage",
+                "name": "junit-vintage-engine"
+            }
+        },
+        {
+            "group": "com.intuit.karate",
+            "version": "1.3.1",
+            "name": "karate-junit4",
+            "module": {
+                "group": "com.intuit.karate",
+                "name": "karate-junit4"
+            }
+        },
+        {
+            "group": "org.apiguardian",
+            "version": "1.1.0",
+            "name": "apiguardian-api",
+            "module": {
+                "group": "org.apiguardian",
+                "name": "apiguardian-api"
+            }
+        },
+        {
+            "group": "junit",
+            "version": "4.13.1",
+            "name": "junit",
+            "module": {
+                "group": "junit",
+                "name": "junit"
+            }
+        },
+        {
+            "group": "com.intuit.karate",
+            "version": "1.3.1",
+            "name": "karate-core",
+            "module": {
+                "group": "com.intuit.karate",
+                "name": "karate-core"
+            }
+        },
+        {
+            "group": "org.opentest4j",
+            "version": "1.2.0",
+            "name": "opentest4j",
+            "module": {
+                "group": "org.opentest4j",
+                "name": "opentest4j"
+            }
+        },
+        {
+            "group": "org.hamcrest",
+            "version": "1.3",
+            "name": "hamcrest-core",
+            "module": {
+                "group": "org.hamcrest",
+                "name": "hamcrest-core"
+            }
+        },
+        {
+            "group": "org.graalvm.js",
+            "version": "22.0.0.2",
+            "name": "js-scriptengine",
+            "module": {
+                "group": "org.graalvm.js",
+                "name": "js-scriptengine"
+            }
+        },
+        {
+            "group": "org.graalvm.js",
+            "version": "22.0.0.2",
+            "name": "js",
+            "module": {
+                "group": "org.graalvm.js",
+                "name": "js"
+            }
+        },
+        {
+            "group": "org.thymeleaf",
+            "version": "3.0.14.RELEASE",
+            "name": "thymeleaf",
+            "module": {
+                "group": "org.thymeleaf",
+                "name": "thymeleaf"
+            }
+        },
+        {
+            "group": "com.linecorp.armeria",
+            "version": "1.18.0",
+            "name": "armeria",
+            "module": {
+                "group": "com.linecorp.armeria",
+                "name": "armeria"
+            }
+        },
+        {
+            "group": "org.apache.httpcomponents",
+            "version": "4.5.13",
+            "name": "httpclient",
+            "module": {
+                "group": "org.apache.httpcomponents",
+                "name": "httpclient"
+            }
+        },
+        {
+            "group": "ch.qos.logback",
+            "version": "1.2.9",
+            "name": "logback-classic",
+            "module": {
+                "group": "ch.qos.logback",
+                "name": "logback-classic"
+            }
+        },
+        {
+            "group": "org.slf4j",
+            "version": "1.7.32",
+            "name": "jcl-over-slf4j",
+            "module": {
+                "group": "org.slf4j",
+                "name": "jcl-over-slf4j"
+            }
+        },
+        {
+            "group": "org.antlr",
+            "version": "4.9.3",
+            "name": "antlr4-runtime",
+            "module": {
+                "group": "org.antlr",
+                "name": "antlr4-runtime"
+            }
+        },
+        {
+            "group": "com.jayway.jsonpath",
+            "version": "2.7.0",
+            "name": "json-path",
+            "module": {
+                "group": "com.jayway.jsonpath",
+                "name": "json-path"
+            }
+        },
+        {
+            "group": "info.cukes",
+            "version": "1.2.5",
+            "name": "cucumber-java",
+            "module": {
+                "group": "info.cukes",
+                "name": "cucumber-java"
+            }
+        },
+        {
+            "group": "org.yaml",
+            "version": "1.32",
+            "name": "snakeyaml",
+            "module": {
+                "group": "org.yaml",
+                "name": "snakeyaml"
+            }
+        },
+        {
+            "group": "de.siegmar",
+            "version": "2.0.0",
+            "name": "fastcsv",
+            "module": {
+                "group": "de.siegmar",
+                "name": "fastcsv"
+            }
+        },
+        {
+            "group": "info.picocli",
+            "version": "4.6.1",
+            "name": "picocli",
+            "module": {
+                "group": "info.picocli",
+                "name": "picocli"
+            }
+        },
+        {
+            "group": "io.github.classgraph",
+            "version": "4.8.149",
+            "name": "classgraph",
+            "module": {
+                "group": "io.github.classgraph",
+                "name": "classgraph"
+            }
+        },
+        {
+            "group": "io.github.t12y",
+            "version": "1.0.2",
+            "name": "resemble",
+            "module": {
+                "group": "io.github.t12y",
+                "name": "resemble"
+            }
+        },
+        {
+            "group": "io.github.t12y",
+            "version": "1.0.0",
+            "name": "ssim",
+            "module": {
+                "group": "io.github.t12y",
+                "name": "ssim"
+            }
+        },
+        {
+            "group": "org.graalvm.regex",
+            "version": "22.0.0.2",
+            "name": "regex",
+            "module": {
+                "group": "org.graalvm.regex",
+                "name": "regex"
+            }
+        },
+        {
+            "group": "org.graalvm.truffle",
+            "version": "22.0.0.2",
+            "name": "truffle-api",
+            "module": {
+                "group": "org.graalvm.truffle",
+                "name": "truffle-api"
+            }
+        },
+        {
+            "group": "org.graalvm.sdk",
+            "version": "22.0.0.2",
+            "name": "graal-sdk",
+            "module": {
+                "group": "org.graalvm.sdk",
+                "name": "graal-sdk"
+            }
+        },
+        {
+            "group": "ognl",
+            "version": "3.1.26",
+            "name": "ognl",
+            "module": {
+                "group": "ognl",
+                "name": "ognl"
+            }
+        },
+        {
+            "group": "org.attoparser",
+            "version": "2.0.5.RELEASE",
+            "name": "attoparser",
+            "module": {
+                "group": "org.attoparser",
+                "name": "attoparser"
+            }
+        },
+        {
+            "group": "org.unbescape",
+            "version": "1.1.6.RELEASE",
+            "name": "unbescape",
+            "module": {
+                "group": "org.unbescape",
+                "name": "unbescape"
+            }
+        },
+        {
+            "group": "org.slf4j",
+            "version": "1.7.36",
+            "name": "slf4j-api",
+            "module": {
+                "group": "org.slf4j",
+                "name": "slf4j-api"
+            }
+        },
+        {
+            "group": "com.fasterxml.jackson.core",
+            "version": "2.13.3",
+            "name": "jackson-annotations",
+            "module": {
+                "group": "com.fasterxml.jackson.core",
+                "name": "jackson-annotations"
+            }
+        },
+        {
+            "group": "com.fasterxml.jackson.core",
+            "version": "2.13.3",
+            "name": "jackson-databind",
+            "module": {
+                "group": "com.fasterxml.jackson.core",
+                "name": "jackson-databind"
+            }
+        },
+        {
+            "group": "com.fasterxml.jackson.core",
+            "version": "2.13.3",
+            "name": "jackson-core",
+            "module": {
+                "group": "com.fasterxml.jackson.core",
+                "name": "jackson-core"
+            }
+        },
+        {
+            "group": "io.micrometer",
+            "version": "1.9.2",
+            "name": "micrometer-core",
+            "module": {
+                "group": "io.micrometer",
+                "name": "micrometer-core"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-codec-haproxy",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-codec-haproxy"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-codec-http2",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-codec-http2"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-resolver-dns-native-macos",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-resolver-dns-native-macos"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-resolver-dns-native-macos",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-resolver-dns-native-macos"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-resolver-dns-classes-macos",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-resolver-dns-classes-macos"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-resolver-dns",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-resolver-dns"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-transport-native-epoll",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-transport-native-epoll"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-handler-proxy",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-handler-proxy"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-codec-http",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-codec-http"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-handler",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-handler"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-transport-classes-epoll",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-transport-classes-epoll"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-transport-native-unix-common",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-transport-native-unix-common"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-transport-native-unix-common",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-transport-native-unix-common"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-codec-dns",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-codec-dns"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-codec-socks",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-codec-socks"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-codec",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-codec"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-transport",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-transport"
+            }
+        },
+        {
+            "group": "org.reactivestreams",
+            "version": "1.0.4",
+            "name": "reactive-streams",
+            "module": {
+                "group": "org.reactivestreams",
+                "name": "reactive-streams"
+            }
+        },
+        {
+            "group": "com.google.code.findbugs",
+            "version": "3.0.2",
+            "name": "jsr305",
+            "module": {
+                "group": "com.google.code.findbugs",
+                "name": "jsr305"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "2.0.53.Final",
+            "name": "netty-tcnative-boringssl-static",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-tcnative-boringssl-static"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "2.0.53.Final",
+            "name": "netty-tcnative-boringssl-static",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-tcnative-boringssl-static"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "2.0.53.Final",
+            "name": "netty-tcnative-boringssl-static",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-tcnative-boringssl-static"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "2.0.53.Final",
+            "name": "netty-tcnative-boringssl-static",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-tcnative-boringssl-static"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "2.0.53.Final",
+            "name": "netty-tcnative-boringssl-static",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-tcnative-boringssl-static"
+            }
+        },
+        {
+            "group": "com.aayushatharva.brotli4j",
+            "version": "1.7.1",
+            "name": "brotli4j",
+            "module": {
+                "group": "com.aayushatharva.brotli4j",
+                "name": "brotli4j"
+            }
+        },
+        {
+            "group": "org.apache.httpcomponents",
+            "version": "4.4.13",
+            "name": "httpcore",
+            "module": {
+                "group": "org.apache.httpcomponents",
+                "name": "httpcore"
+            }
+        },
+        {
+            "group": "commons-codec",
+            "version": "1.11",
+            "name": "commons-codec",
+            "module": {
+                "group": "commons-codec",
+                "name": "commons-codec"
+            }
+        },
+        {
+            "group": "ch.qos.logback",
+            "version": "1.2.9",
+            "name": "logback-core",
+            "module": {
+                "group": "ch.qos.logback",
+                "name": "logback-core"
+            }
+        },
+        {
+            "group": "net.minidev",
+            "version": "2.4.7",
+            "name": "json-smart",
+            "module": {
+                "group": "net.minidev",
+                "name": "json-smart"
+            }
+        },
+        {
+            "group": "info.cukes",
+            "version": "1.2.5",
+            "name": "cucumber-core",
+            "module": {
+                "group": "info.cukes",
+                "name": "cucumber-core"
+            }
+        },
+        {
+            "group": "org.javassist",
+            "version": "3.20.0-GA",
+            "name": "javassist",
+            "module": {
+                "group": "org.javassist",
+                "name": "javassist"
+            }
+        },
+        {
+            "group": "org.hdrhistogram",
+            "version": "2.1.12",
+            "name": "HdrHistogram",
+            "module": {
+                "group": "org.hdrhistogram",
+                "name": "HdrHistogram"
+            }
+        },
+        {
+            "group": "org.latencyutils",
+            "version": "2.0.3",
+            "name": "LatencyUtils",
+            "module": {
+                "group": "org.latencyutils",
+                "name": "LatencyUtils"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-buffer",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-buffer"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-resolver",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-resolver"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "4.1.79.Final",
+            "name": "netty-common",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-common"
+            }
+        },
+        {
+            "group": "io.netty",
+            "version": "2.0.53.Final",
+            "name": "netty-tcnative-classes",
+            "module": {
+                "group": "io.netty",
+                "name": "netty-tcnative-classes"
+            }
+        },
+        {
+            "group": "net.minidev",
+            "version": "2.4.7",
+            "name": "accessors-smart",
+            "module": {
+                "group": "net.minidev",
+                "name": "accessors-smart"
+            }
+        },
+        {
+            "group": "org.ow2.asm",
+            "version": "9.1",
+            "name": "asm",
+            "module": {
+                "group": "org.ow2.asm",
+                "name": "asm"
+            }
+        }
+    ]
+}
