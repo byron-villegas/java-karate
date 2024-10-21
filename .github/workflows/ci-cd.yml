@@ -23,8 +23,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build --stacktrace
-  acceptance-test:
-    needs: [build]
+  test:
+    needs: [ build ]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -42,3 +42,11 @@ jobs:
       run: chmod +x gradlew
     - name: Test with Gradle
       run: ./gradlew test
+    - uses: actions/upload-artifact@v4
+      with:
+        name: karate-reports
+        path: /build/karate-reports
+    - uses: actions/upload-artifact@v4
+      with:
+        name: reports
+        path: /build/reports
